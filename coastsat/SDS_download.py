@@ -374,7 +374,7 @@ def check_images_available(inputs):
     Returns:
     -----------
     im_dict_T1: list of dict
-        list of images in Tier 1 and Level-1C
+        list of images in Tier 1 and Level-2A
     im_dict_T2: list of dict
         list of images in Tier 2 (Landsat only)
     """
@@ -395,9 +395,9 @@ def check_images_available(inputs):
     col_names_T1 = {'L5':'LANDSAT/LT05/C01/T1_TOA',
                  'L7':'LANDSAT/LE07/C01/T1_TOA',
                  'L8':'LANDSAT/LC08/C01/T1_TOA',
-                 'S2':'COPERNICUS/S2'}
+                 'S2':'COPERNICUS/S2_SR'}
 
-    print('- In Landsat Tier 1 & Sentinel-2 Level-1C:')
+    print('- In Sentinel-2 Level-2A:')
     im_dict_T1 = dict([])
     sum_img = 0
     for satname in inputs['sat_list']:
